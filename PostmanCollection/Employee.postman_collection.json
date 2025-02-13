@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "ead99ad1-83e5-40e8-a4dd-ac8c698182a1",
+		"name": "Employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38656977"
+	},
+	"item": [
+		{
+			"name": "Add employee 1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2FlNWU3ZDcyMTU4NGNmODZjNmU0YWEiLCJpYXQiOjE3Mzk0ODA3MDEsImV4cCI6MTczOTQ4NDMwMX0.RYlr_D3vjwFPNtU74jjXSkqnGsVki1Eo3-Yrg7I0_Xs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"query\": \"mutation { addEmployee(first_name: \\\"John\\\", last_name: \\\"Doe\\\", email: \\\"john.doe@example.com\\\", gender: \\\"Male\\\", designation: \\\"Software Engineer\\\", salary: 60000.0, date_of_joining: \\\"2025-01-01\\\", department: \\\"IT\\\", employee_photo: \\\"http://example.com/photo.jpg\\\") { _id first_name last_name email gender designation salary date_of_joining department employee_photo } }\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add employee 2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2FlNWU3ZDcyMTU4NGNmODZjNmU0YWEiLCJpYXQiOjE3Mzk0ODA3MDEsImV4cCI6MTczOTQ4NDMwMX0.RYlr_D3vjwFPNtU74jjXSkqnGsVki1Eo3-Yrg7I0_Xs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"query\": \"mutation { addEmployee(first_name: \\\"John\\\", last_name: \\\"Doe\\\", email: \\\"john.doe@example.com\\\", gender: \\\"Male\\\", designation: \\\"Software Engineer\\\", salary: 60000.0, date_of_joining: \\\"2025-01-01\\\", department: \\\"IT\\\", employee_photo: \\\"http://example.com/photo.jpg\\\") { _id first_name last_name email gender designation salary date_of_joining department employee_photo } }\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEmployees",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2FlNWU3ZDcyMTU4NGNmODZjNmU0YWEiLCJpYXQiOjE3Mzk0ODA3MDEsImV4cCI6MTczOTQ4NDMwMX0.RYlr_D3vjwFPNtU74jjXSkqnGsVki1Eo3-Yrg7I0_Xs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"query\": \"mutation { addEmployee(first_name: \\\"John\\\", last_name: \\\"Doe\\\", email: \\\"john.doe@example.com\\\", gender: \\\"Male\\\", designation: \\\"Software Engineer\\\", salary: 60000.0, date_of_joining: \\\"2025-01-01\\\", department: \\\"IT\\\", employee_photo: \\\"http://example.com/photo.jpg\\\") { _id first_name last_name email gender designation salary date_of_joining department employee_photo } }\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEmployeeById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2FlNWU3ZDcyMTU4NGNmODZjNmU0YWEiLCJpYXQiOjE3Mzk0ODA3MDEsImV4cCI6MTczOTQ4NDMwMX0.RYlr_D3vjwFPNtU74jjXSkqnGsVki1Eo3-Yrg7I0_Xs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"query\": \"mutation { addEmployee(first_name: \\\"John\\\", last_name: \\\"Doe\\\", email: \\\"john.doe@example.com\\\", gender: \\\"Male\\\", designation: \\\"Software Engineer\\\", salary: 60000.0, date_of_joining: \\\"2025-01-01\\\", department: \\\"IT\\\", employee_photo: \\\"http://example.com/photo.jpg\\\") { _id first_name last_name email gender designation salary date_of_joining department employee_photo } }\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEmployeeByDeptOrDesignation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2FlNWU3ZDcyMTU4NGNmODZjNmU0YWEiLCJpYXQiOjE3Mzk0ODA3MDEsImV4cCI6MTczOTQ4NDMwMX0.RYlr_D3vjwFPNtU74jjXSkqnGsVki1Eo3-Yrg7I0_Xs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"query\": \"mutation { addEmployee(first_name: \\\"John\\\", last_name: \\\"Doe\\\", email: \\\"john.doe@example.com\\\", gender: \\\"Male\\\", designation: \\\"Software Engineer\\\", salary: 60000.0, date_of_joining: \\\"2025-01-01\\\", department: \\\"IT\\\", employee_photo: \\\"http://example.com/photo.jpg\\\") { _id first_name last_name email gender designation salary date_of_joining department employee_photo } }\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEmployeeByID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2FlNWU3ZDcyMTU4NGNmODZjNmU0YWEiLCJpYXQiOjE3Mzk0ODA3MDEsImV4cCI6MTczOTQ4NDMwMX0.RYlr_D3vjwFPNtU74jjXSkqnGsVki1Eo3-Yrg7I0_Xs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"query\": \"mutation { addEmployee(first_name: \\\"John\\\", last_name: \\\"Doe\\\", email: \\\"john.doe@example.com\\\", gender: \\\"Male\\\", designation: \\\"Software Engineer\\\", salary: 60000.0, date_of_joining: \\\"2025-01-01\\\", department: \\\"IT\\\", employee_photo: \\\"http://example.com/photo.jpg\\\") { _id first_name last_name email gender designation salary date_of_joining department employee_photo } }\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteByID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2FlNWU3ZDcyMTU4NGNmODZjNmU0YWEiLCJpYXQiOjE3Mzk0ODA3MDEsImV4cCI6MTczOTQ4NDMwMX0.RYlr_D3vjwFPNtU74jjXSkqnGsVki1Eo3-Yrg7I0_Xs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"query\": \"mutation { addEmployee(first_name: \\\"John\\\", last_name: \\\"Doe\\\", email: \\\"john.doe@example.com\\\", gender: \\\"Male\\\", designation: \\\"Software Engineer\\\", salary: 60000.0, date_of_joining: \\\"2025-01-01\\\", department: \\\"IT\\\", employee_photo: \\\"http://example.com/photo.jpg\\\") { _id first_name last_name email gender designation salary date_of_joining department employee_photo } }\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
