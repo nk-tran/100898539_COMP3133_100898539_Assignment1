@@ -1,4 +1,3 @@
-// employeeResolvers.js
 const Employee = require('../models/Employee'); 
 const { body } = require('express-validator');
 
